@@ -1,0 +1,7 @@
+<launch>
+<node pkg="rosserial_python " type="serial_node.py" name="mpu">
+<param name="port"  type="string"  value="/dev/ttyACM0"/>
+<param name="baud"  type="int"  value="115200"/>
+</node>
+<node name="rqt_plot" pkg="rqt_plot" type="rqt_plot" />
+</launch>
